@@ -10,7 +10,7 @@ class CompressorRecipe(ConanFile):
         self.requires("zlib/1.2.11")
 
     def build_requirements(self):
-        self.tool_requires("cmake/3.22.6")
+        self.tool_requires("cmake/[^3.23]")
         
     def build(self):
         cmake = CMake(self)
