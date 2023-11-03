@@ -2,7 +2,7 @@ from conan import ConanFile
 from conan.tools.cmake import CMake, CMakeToolchain, CMakeDeps
 
 
-class CompressorRecipe(ConanFile):
+class Recipe(ConanFile):
     settings = "os", "compiler", "build_type", "arch"
 
     def requirements(self):
