@@ -1,7 +1,6 @@
 from conan import ConanFile
 from conan.tools.cmake import CMake, CMakeToolchain, CMakeDeps
 
-
 class Recipe(ConanFile):
     settings = "os", "compiler", "build_type", "arch"
 
