@@ -8,7 +8,6 @@
     ```
   - for conan 2.X
       ```
-    conan install path/to/repo -of path/to/build_dir
     conan build path/to/repo -of path/to/build_dir
     ```
 
