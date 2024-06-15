@@ -3,12 +3,12 @@
 ## Essential commands
   - for conan 1.X
       ```
-    conan install path/to/repo -if path/to/build_dir
+    conan install path/to/repo -pr:b=default -if path/to/build_dir -s build_type=Release
     conan build path/to/repo -bf path/to/build_dir
     ```
   - for conan 2.X
       ```
-    conan build path/to/repo -of path/to/build_dir
+    conan build path/to/repo -pr:b=default -of path/to/build_dir -s build_type=Release
     ```
 
 ## Example
@@ -18,6 +18,6 @@
     ```
     mkdir .\build
     echo * > .\build\.gitignore
-    conan install . -if .\build
+    conan install . -pr:b=default -if .\build -s build_type=Release
     conan build . -bf .\build
     ```
