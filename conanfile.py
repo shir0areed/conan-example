@@ -13,6 +13,7 @@ class Recipe(ConanFile):
     def generate(self):
         tc = CMakeToolchain(self)
         tc.user_presets_path = False
+        tc.variables['CMAKE_POLICY_DEFAULT_CMP0091']='NEW'
         tc.generate()
 
         deps = CMakeDeps(self)
