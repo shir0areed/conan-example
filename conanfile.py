@@ -2,13 +2,13 @@ from conan import ConanFile
 from conan.tools.cmake import CMake, CMakeToolchain, CMakeDeps
 
 class Recipe(ConanFile):
-    settings = "os", "compiler", "build_type", "arch"
+    settings = 'os', 'compiler', 'build_type', 'arch'
 
     def requirements(self):
         pass
 
     def build_requirements(self):
-        self.tool_requires("cmake/[^3.23]")
+        self.tool_requires('cmake/[^3.23]')
         
     def generate(self):
         tc = CMakeToolchain(self)
